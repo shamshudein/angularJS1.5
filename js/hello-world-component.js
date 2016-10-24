@@ -1,7 +1,7 @@
 (function(){
     "use strict";
 
-    var module = angular.module("helloApp");
+    var module = angular.module("helloApp"); 
 
     module.component("helloWorld",{
         //template: "Hello from Component"
