@@ -5,7 +5,17 @@
 
     module.component("helloWorld",{
         //template: "Hello from Component"
-        templateUrl: "templates/hello-world-template.html"
+        templateUrl: "templates/hello-world-template.html",
+        controllerAs: "model",
+        controller: function(){
+            
+            var model = this;
+
+            model.message = "Hello from component controller";
+            model.changeMessage = function(){
+                model.message = "New Message";
+            };
+        }
     });
 
 }());
